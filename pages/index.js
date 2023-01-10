@@ -10,20 +10,23 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 
 export default function Home() {
   return (
-    <>
+    <div className={darkMode ? "dark" : ""}>
       <Head>
         <title>Raina Ratheshan Portfolio</title>
         <meta name="description" content="Portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-white px-10">
+      <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl">developedbyRathe</h1>
+          <nav className="py-10 mb-12 flex justify-between dark:text-white">
+            <h1 className="font-burtons text-xl">developedbyed</h1>
             <ul className="flex items-center">
               <li>
-                <BsFillMoonStarsFill className="cursor-pointer" />
+                <BsFillMoonStarsFill
+                  onClick={() => setDarkMode(!darkMode)}
+                  className=" cursor-pointer text-2xl"
+                />
               </li>
               <li>
                 <a
@@ -40,7 +43,7 @@ export default function Home() {
               Ratheshan Sathiyamoorthy
             </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
-              Developer and designer.
+              Developer and DevOps Engineer
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
               Freelancer providing services for programming and design content
@@ -57,6 +60,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-    </>
+    </div>
   );
 }
