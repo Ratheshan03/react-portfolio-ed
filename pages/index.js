@@ -4,11 +4,14 @@ import {
   AiFillLinkedin,
   AiFillYoutube,
 } from "react-icons/ai";
+import { useState } from "react";
 import deved from "../public/dev-ed-wave.png";
 import Image from "next/image";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 
 export default function Home() {
+  const [darkMode, setDarkMode] = useState(false);
+
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -20,7 +23,7 @@ export default function Home() {
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
-            <h1 className="font-burtons text-xl">developedbyed</h1>
+            <h1 className="font-burtons text-xl">developedbyrathe</h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
