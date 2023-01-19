@@ -1,4 +1,4 @@
-## REACT PORTFOLIO 
+## MINIMAL REACT PORTFOLIO 
 
 
 ### Inspired by Developedbyed
