@@ -1,4 +1,4 @@
-## MINIMAL REACT PORTFOLIO 
+## REACT PORTFOLIO WITH TAILWIND CSS
 
 
 ### Inspired by Developedbyed
